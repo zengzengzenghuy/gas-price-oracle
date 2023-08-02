@@ -1,15 +1,5 @@
 import { OffChainOracle, OffChainOracles, OnChainOracle, OnChainOracles } from '@/services'
 
-const ethgasstation: OffChainOracle = {
-  name: 'ethgasstation',
-  url: 'https://ethgasstation.info/json/ethgasAPI.json',
-  instantPropertyName: 'fastest',
-  fastPropertyName: 'fast',
-  standardPropertyName: 'average',
-  lowPropertyName: 'safeLow',
-  denominator: 10,
-  additionalDataProperty: null,
-}
 
 const etherchain: OffChainOracle = {
   name: 'etherchain',
@@ -30,7 +20,6 @@ const chainlink: OnChainOracle = {
 }
 
 export const offChainOracles: OffChainOracles = {
-  ethgasstation,
   etherchain,
 }
 
